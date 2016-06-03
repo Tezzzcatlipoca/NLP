@@ -1,0 +1,8 @@
+Los archivos ---- Ind20-84TodasPInsumo.xlsx---- contienen todas las variables
+necesarias para correr OptAl y calcular los ideales.
+Fueron generados a mano, a través de una extracción de index_period_cell,
+y los mercados (mbd0-mbdk) se generaron por separado a través de una
+serie de pasos corriendo código de SAS y R. Las carpetas con estos insumos
+se encuentran en los meses de Abril y Mayo.	
+Los mercados fueron convertidos a caracter utilizando una macro de VBA
+("AgregaLetraACeldasMbd.bas").
