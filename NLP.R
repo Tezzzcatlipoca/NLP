@@ -33,7 +33,7 @@ numunicas<-length(unicas)
 
 # Contar cuantas veces aparece cada palabra en el total del texto
 for (i in 1:numunicas) {
-    stringo<-paste("[^[:alnum:]]",unicas[i],"[^[:alnum]]",sep="")
+    stringo<-paste("^",unicas[i],"$",sep="")
     apariciones<-sum(str_count(together, pattern = stringo))
     if (i==1) {
         veces<-apariciones
@@ -44,5 +44,7 @@ for (i in 1:numunicas) {
 }
 
 tabla<-data.frame(unicas=unicas,veces=veces)
+orden<-order(tabla$veces,decreasing = TRUE)
+tabla[orden,]
 
 
