@@ -1,0 +1,16 @@
+
+.reveal section p {
+  color: blue;
+}
+
+.reveal section del {
+  color: red;
+} 
+
+.reveal .emphasized {
+  color: red;
+}
+
+.header {
+  color: red;
+}
